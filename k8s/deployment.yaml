@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: t53gtregt
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: t53gtregt
   template:
     metadata:
       labels:
-        app: ray
+        app: t53gtregt
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/t53gtregt:latest
+        name: t53gtregt
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: ""
+          value: "animelst.com"
         - name: Vless_UUID
-          value: "273d7707-9bb1-44ff-b24c-b59876344cac"
+          value: "5ab512f0-644f-4093-b974-20fe029ac1c3"
         - name: Vless_Path
-          value: "/s233"
+          value: "/76hyttg"
         - name: Vmess_UUID
-          value: "273d7707-9bb1-44ff-b24c-b59876344cac"
+          value: "5ab512f0-644f-4093-b974-20fe029ac1c3"
         - name: Vmess_Path
-          value: "/s244"
+          value: "/fevx"
         - name: Share_Path
           value: "/share233"
